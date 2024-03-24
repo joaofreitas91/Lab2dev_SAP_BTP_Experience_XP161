@@ -1,216 +1,221 @@
-# Create your first application with SAP Build Apps
+# Criando sua primeira aplicação com SAP Build Apps
 
-## Introduction
+## Introdução
 
-In this section you will create a new Application using SAP Build Apps.
+Nesta seção, você irá criar uma nova aplicação usando o SAP Build Apps.
 
-## Prerequisites
+## Pré-requisitos
 
-- You have completed previous exercise and completed the setup steps (This is already setup for you today)
+- Ter completado o exercício anterior e as etapas de configuração.
 
-## Step 1: Launch SAP Build Apps
+## Passo 1: Iniciar o SAP Build Apps
 
-Open [SAP Build Apps](https://xp161-dt162-x75hy9xc.eu10.build.cloud.sap/lobby). Outside of SAP TechEd 2023 you can open it via the **SAP BTP Cockpit** as described below.
+1. Abra sua **SAP BTP subaccount**.
 
-1. Open your **SAP BTP subaccount**.
+2. No menu lateral da sua subaccount, navegue para **Services → Instances and Subscriptions**.
 
-2. From the left-side of your subaccount menu, navigate from **Services → Instances and Subscriptions**.
-
-3. In the tab **Subscriptions**, find **SAP Build Apps** and choose **Go to Application** to open the entry page for Application Development.
+3. Na aba **Subscriptions**, procure **SAP Build Apps** e escolha **Go to Application** para abrir a página de  desenvolvimento de aplicativos.
 
     <p align="center"><img src="./images/ex1_step1_3.png" width="100%" /></p>
 
-4. Log in to the Application using your Identity Provider credentials.
+4. Entre na aplicação usando suas credenciais de provedor de identidade.    
 
-## Step 2: Create an Application using SAP Build Apps
+## Passo 2: Criando uma aplicação usando SAP Build Apps
 
-**Create a Project**
+**Criando um projeto**
 
-1. On the SAP Build Lobby, choose to **Create** and choose **Build an Application**.
+1. No Lobby do SAP Build ,selecione a opção **Create** e escolha **Build an Application**.
 
-    <p align="center"><img src="./images/ex1_step2_1.png" width="100%" /></p>
+    <p align="center"><img src="./images/ex1_step2_1.png" width="80%" /></p>
 
-2. Choose **Web & Mobile Application**.
+2. Escolha a opção **SAP Build Apps**
 
-    <p align="center"><img src="./images/ex1_step2_2.png" width="100%" /></p>
+    <p align="center"><img src="./images/ex1_step2_1_2.png" width="80%" /></p>
 
-3. Enter a Project Name, In the format ``XP161_##`` where **##** is your group number, e.g. `XP161_00`
+3. Escolha **Web & Mobile Application**.
 
-4. Enter a **Short Description**.
+    <p align="center"><img src="./images/ex1_step2_2.png" width="80%" /></p>
 
-5. Choose **Create**.
+4. Defina um nome para o projeto no seguinte formato ``BTP_EXP_##`` onde **##** é um identificador único como um número de inscrição ou o seu nome, por exemplo, `BTP_EXP_01`.
 
-    <p align="center"><img src="./images/ex1_step2_5.png" width="100%" /></p>
+5. Você pode adicionar uma descrição curta no campo **Short Description** mas esse campo não é obrigatório.
 
-6. Your created project will be opened in **App Builder** which is the central page to build your application including a user interface, logic, as well as data integration.
+6. Selecione a opção **Create**.
 
-7. Choose **Headline**.
+    <p align="center"><img src="./images/ex1_step2_5.png" width="60%" /></p>
 
-8. Find the **Properties** tab in the menu on the right to change the content of the title. Choose **Content** and change the content from **Headline** to **Business Partners**.
+
+7. O Projeto criado será aberto no **App Builder** que é a página central para construir sua aplicação incluindo a interface do usuário, lógica e integração de dados.
+
+8. Selecione **Headline**.
+
+9. Procure a aba **Properties** no menu à direita para alterar o conteúdo do título. Escolha **Content** e altere o conteúdo de **Headline** para **Meus Parceiros de Negócios**.
 
     <p align="center"><img src="./images/ex1_step2_8.png" width="100%" /></p>
 
-9. Find the text field in the UI canvas in the center of your screen and choose **x** to remove this component.
+10. Procure o campo de texto no UI canvas no centro da tela e escolha **x** para remover este componente.
 
     <p align="center"><img src="./images/ex1_step2_9.png" width="50%" /></p>
 
-10. Choose the blank page. On the right side under the **Properties**, choose **Page name**.
+11. Clique na página em branco. No lado direito, em **Properties**, escolha **Page name**.
 
-11. Change the page name to **Home**.
+12. Altere o nome da página para **Home**.
 
     <p align="center"><img src="./images/ex1_step2_11.png" width="100%" /></p>
 
-## Step 3: Enable Authentication
+## Passo 3: Adicionando uma fonte de dados local
 
-To consume data from your SAP backend system or mock data that is configured as a SAP BTP destination in the previous section, you need to enable authentication.
+Para adicionar uma fonte de dados local você precisa seguir os seguintes passos:
 
-1. Choose **AUTH** at the top section of the app builder.
+1. Clique na aba **Data** no topo do App Builder.
 
-2. Choose **Enable Authentication**.
+2. Procure a seção **On-device storage** e clique na opção  **CREATE DATA ENTITY**.
 
-    <p align="center"><img src="./images/ex1_step3_2.png" width="100%" /></p>
+    <p align="center"><img src="./images/ex1_step3_1.png" width="100%" /></p>
 
-3. Select **SAP BTP Authentication** and choose **OK**. This enables authentication for the project.
+3. Na próxima tela escreva o nome da entidade de dados como `Business_Partners` e clique em **ADD**.
+
+    <p align="center"><img src="./images/ex1_step3_2.png" width="60%" /></p>
+
+4. Na próxima tela, clique no botão **ADD NEW** para adicionar um campos para a entidade de dados.
 
     <p align="center"><img src="./images/ex1_step3_3.png" width="100%" /></p>
 
-## Step 4: Add a data Source
+5. Na próxima tela, no campo **Field name** preencha com o valor `Partner_Name` e selecione o tipo de dados como **Text**.
 
-To add a data source, you need to add the following steps to your project.
+    <p align="center"><img src="./images/ex1_step3_4.png" width="60%" /></p>
 
-1. Choose the tab **Data** at the top of App builder.
+6. Repita os passos para os seguintes campos:
 
-2. Find section **No systems integrated** and choose **Add Integration**.
+    |Field name | Field type |
+    |----|----|
+    |Address | Text |
+    |Email | Text |
+    |Phone | Text |
 
-    <p align="center"><img src="./images/ex1_step4_2.png" width="100%" /></p>
+7. Agora vamos adicionar alguns dados fictícios para a entidade de dados. Clique no botão **BROWSE SAMPLE DATA**.
 
-3. On the next screen **SAP Systems**, select **BTP Destinations**.
+    <p align="center"><img src="./images/ex1_step3_5.png" width="100%" /></p>
 
-4. Select the destination that is already created for this exercise - `BusinessPartners`.
+8. Na próxima tela, clique no botão **NEW RECORD** para adicionar um novo registro. Fique a vontade para adicionar quantos registros desejar.
 
-5. Click **Install Integration**.
-   
-6. Under the **Data entities**, select **A_BusinessPartner**.
+    <p align="center"><img src="./images/ex1_step3_6.png" width="100%" /></p>
 
-    <p align="center"><img src="./images/ex1_step4_6.png" width="100%" /></p>
+9. Agora você adicionou uma fonte de dados para sua aplicação SAP Build Apps.
 
-7. Select **Enable Data Entity** to enable it.
-   
-8. Now, search for **A_BusinessPartnerAddress** and choose **Enable Data Entity**.
+## Passo 4: Criando uma página de lista de parceiros de negócios
 
-9.  Repeat the same for **A_AddressPhoneNumber**.
-
-10.  Choose **Save** at top of the app builder. This adds the data source to your project. Choose **UI Canvas** to go back to the UI designer view.
-
-11. Now you have added a data source for your SAP Build Apps application.
-
-## Step 5: Create a Business Partner List Page
-
-To create the page displaying the list of business partners, you need to first create **data variables**.
+Para criar uma página exibindo a lista de parceiros de negócios, você precisa primeiro criar **data variable**.
 
 **Data Variable**
 
-A data variable is essentially the same as a page variable that exists in the context of the current page that is not accessible from other pages, and disappears if the page is removed from the navigation stack. The difference is that it gets its schema from the data resource it points to, and it comes with included default logic.
+Um data variable é essencialmente a mesma coisa que uma page variable que existe no contexto da página atual e não é acessível de outras páginas, e desaparece se a página for removida de navegação. A diferença é que ela obtém seu esquema do recurso de dados ao qual aponta e vem com a lógica padrão incluída.
 
-**Creating a Data Variable**
+**Criando um Data Variable**
 
-Let us create a data variable to store the results of the business partner data coming from the data source.
+Vamos criar um data variable para armazenar os resultados dos dados do parceiro de negócios provenientes da fonte de dados.
 
-1. From the UI canvas, choose the toggle button to switch from **VIEW** to **VARIABLES**.
+1. Na aba UI CANVAS, escolha o botão de alternância para mudar de **VIEW** para **VARIABLES**.
 
-2. Choose **DATA VARIABLES** on the left side of app builder.
+2. No lado esquerdo do app builder, escolha **DATA VARIABLES**.
 
-3. Now, choose **ADD DATA VARIABLE** and select **A_BusinessPartner**.
+3. Agora, escolha **ADD DATA VARIABLE** e selecione **Business_Partners**.
 
-    <p align="center"><img src="./images/ex1_step5_3.png" width="100%" /></p>
+    <p align="center"><img src="./images/ex1_step4_3.png" width="100%" /></p>
 
-4. Change the **Data variable name** to `A_BusinessPartner`
+4. Altere o campo **Data variable name** para `Business_Partners`
 
-   <p align="center"><img src="./images/ex1_step5_4.png" width="100%" /></p>
+   <p align="center"><img src="./images/ex1_step4_4.png" width="100%" /></p>
 
-5. Choose **SAVE**.
+5. Clique em **SAVE**.
 
-Now that the data variable is created, toggle back to the **VIEW** mode.
+Agora que a data variable foi criada, alterne de volta para o modo **VIEW**.
 
-**Creating a Business Partner List**
+**Criando uma página de lista de parceiros de negócios**
 
-At this step, you are creating a Business Partner List page in app builder.
+Neste passo você irá criar uma página de lista de parceiros de negócios no app builder.
 
-**Check That the Data Is Visible in the UI**
+**Verifique se os dados estão visíveis na interface do usuário**
 
-1. On the left panel of UI CANVAS, you see the **CORE** tab, scroll to the **LISTS section** and choose **List item**.
+1. No painel esquerdo do UI CANVAS, você verá a guia **CORE**, role para a seção **LISTS** e escolha **List item**.
 
-    <p align="center"><img src="./images/ex1_step5_n1.png" width="30%" /></p>
+    <p align="center"><img src="./images/ex1_step4_n1.png" width="30%" /></p>
 
-2. Drag the **List item** to the application's page.
+2. Arraste o **List item** para a página da aplicação.
 
-3. On the right side **PROPERTIES** section, scroll to **Repeat with** and select it.
+3. No lado direito, na seção **PROPERTIES**, role para **Repeat with** e clique no botão para fazer o bind.
 
-    <p align="center"><img src="./images/ex1_step5_n3.png" width="100%" /></p>
+    <p align="center"><img src="./images/ex1_step4_n3.png" width="100%" /></p>
 
-4. A popup opens. Select **Data and Variables**, then choose **Data variable**.
+4. Um popup será aberto. Selecione **Data and Variables**, então escolha **Data variable**.
 
-    <p align="center"><img src="./images/ex1_step5_n4.png" width="80%" /></p>
+    <p align="center"><img src="./images/ex1_step4_n4.png" width="80%" /></p>
 
-5. Select **A_BusinessPartner** from the list and choose **SAVE**.
+5. Selecione **Business_Partners** na lista e clique em **SAVE**.
 
-You have now configured that the list gets populated with the data variable which gets business partner data from the backend system.
+Você configurou que a lista é populada com a variável de dados que obtém os dados do parceiro de negócios.
 
-**Select the display fields for the List**
+**Selecionando os campos de exibição para a lista**
 
-Let us now define what fields we would like to show in the UI in the business partners list.
+Agora vamos definir quais campos gostaríamos de exibir na interface do usuário na lista de parceiros de negócios.
 
-1. Choose the list.
+1. Selecione a lista.
 
-2. Go to **PROPERTIES**.
+2. Vá para **PROPERTIES**.
 
-3. Choose Primary Label **ABC**.
+3. Clique no botão do campo Primary Label **ABC**.
 
-    <p align="center"><img src="./images/ex1_step5_nn3.png" width="40%" /></p>
+    <p align="center"><img src="./images/ex1_step4_nn3.png" width="40%" /></p>
 
-4. Choose **Data item in repeat**.
+4. Selecione a opção **Data item in repeat**.
 
-5. Choose **current**.
+5. Selecione a opção **current**.
 
-6. Select **BusinessPartnerFullName**
+6. Selecione a opção **partnerName**
 
-7. Enter `Name` in the field for **Set preview value** and choose **SAVE**.
+7. Digite `Partner Name` no campo **Set preview value** e clique em **SAVE**.
 
-    <p align="center"><img src="./images/ex1_step5_nn6.png" width="100%" /></p>
+    <p align="center"><img src="./images/ex1_step4_nn6.png" width="50%" /></p>
 
-8. Go to **PROPERTIES**.
+8. Vá para **PROPERTIES**.
 
-9. Choose Secondary Label **ABC**.
+9. Clique no botão do campo Secondary Label **ABC**.
 
-10. Choose the **Data item in repeat**.
+10. Selecione a opção **Data item in repeat**.
 
-11. Choose **current**.
+11. Selecione a opção **current**.
 
-12. Select **BusinessPartner**.
+12. Selecione a opção **id**
 
-13. Enter `Id` in the field for **Set preview value** and choose **SAVE**.
+13. Digite `Id` no campo **Set preview value** e clique em **SAVE**.
 
-    <p align="center"><img src="./images/ex1_step5_nn7.png" width="100%" /></p>
+    <p align="center"><img src="./images/ex1_step4_nn7.png" width="50%" /></p>
 
-14. Choose **SAVE** to save the changes in the application.
+## Passo 5: Pré-visualização da aplicação
 
-## Step 6: Preview the Application
+1. Clique na aba **LAUNCH**.
 
-1. Choose the **LAUNCH** tab.
+2. Selecione a opção **OPEN PREVIEW PORTAL**.
 
-2. Choose **OPEN PREVIEW PORTAL**.
+    > Uma nova aba será aberta. Nessa tela você terá duas opções para pré visualização da sua aplicação. Você pode clicar no botão **Open web preview** para visualizar a aplicação no navegador baixar o aplicativo para Android ou iOS e gerar um PIN para visualizar a aplicação no seu dispositivo móvel.
 
-3. A new tab opens. Select the application you have created with your number.
+3. Clique no botão **Open web preview**.
 
-4. The application is launched in the preview portal.
+4. Selecione o aplicativo que você acabou de criar.
 
-    <p align="center"><img src="./images/ex1_step6_4.png" width="100%" /></p>
+5. Deixe a opção **Sample Data** marcada como **ON** e clique em **Open preview**.
 
-The application's first page is now displayed.
+    <p align="center"><img src="./images/ex1_step5_1.png" width="50%" /></p>
 
-## Congrats
+5. O aplicativo será exibido no portal de pré-visualização.
 
-Awesome! You completed Exercise 1. 🥳
+    <p align="center"><img src="./images/ex1_step5_2.png" width="100%" /></p>
 
-You can now navigate to the [Overview](../../#exercises).  
-If your instructor already told you to continue with [Exercise 2](../ex2/), you navigate there using [this link](../ex2/).
+Agora você pode visualizar a lista de parceiros de negócios que você acabou de criar.
+
+## Parabéns!
+
+Incrível! Você completou o Exercício 1. 🥳
+
+Você pode voltar para a página Overview [Overview](../../#exercises).  
+Ou você pode seguir para o próximo exercício [Exercise 2](../ex2/), navegue para lá clicando no link [this link](../ex2/).
