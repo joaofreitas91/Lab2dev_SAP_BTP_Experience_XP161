@@ -1,48 +1,59 @@
-# Pré-requisitos e Configuração do Ambiente
+# Prerequisites & Landscape Setup
 
-> **NOTA:** Os passos deste exercício já foram executados para o seu usuário para o hands-on do BTP Experience 2024. Por favor, continue com o Exercício 1 como um participante presencial. Você pode se referir a este exercício se estiver fazendo o Workshop Hands-on fora do BTP Experience 2024.
+> **NOTE:** The steps of this exercise was already executed for your user for the SAP TechEd 2023 Hands-on Session. Please continue with Exercise 1 as an in-person participant. You can refer to this exercise if you are doing the Hands-on Workshop outside of SAP TechEd 2023.
 
-## Pré-requisitos
+## Prerequisites
 
 - SAP BTP Global Account
 - SAP BTP Subaccount
-  - Ambiente Cloud Foundry ativo
+  - Cloud Foundry Environment enabled
   - *SAP Build Work Zone, standard edition* entitlement
   - *SAP Build Apps* entitlement
   - Cloud Foundry runtime
   - Destination Service
   - Identity Authentication Service Tenant
-- Acesso de Admin Global Account (Para rodar o booster)
-- Acesso de Admin para Subaccount
+- Admin access for Global Account (Running the booster)
+- Admin access for this Subaccount
+- (Optional) An S/4HANA System
 
-## Execute o booster para SAP Build Apps
+## Step 1: Establish Trust to your Identity Authentication Service
 
-No SAP BTP Cockpit, selecione sua global account e siga os passos abaixo:
+1. Go to your Subaccount on SAP BTP and navigate to **Trust Configuration** under **Security**
 
-1. Selecione **Boosters**
-2. Pesquise por `SAP Build Apps`
-3. Selecione o booster **Get Started with SAP Build Apps - Detailed Account Setup** e clique em **Start**
+    <p align="center"><img src="./images/ex0-1-1.png" width="40%" /></p>
 
-    <p align="center"><img src="./images/ex0-2-1.png" width="100%" /></p>
+2. Click on the button **Establish Trust**
+3. Select your Identity Authentication Tenant from the dropdown
+4. Click **Establish Trust**
 
-4. Em **Select Scenario** escolha a opção **Select Subaccount** e clique em **Next**
+    <p align="center"><img src="./images/ex0-1-2.png" width="60%" /></p>
+
+## Step 2: Run the booster for SAP Build Apps
+
+1. At the SAP BTP Cockpit select your global account
+2. Select **Boosters** and search for `SAP Build Apps`.
+
+    <p align="center"><img src="./images/ex0-2-1.png" width="50%" /></p>
+
+3. Press **Start**
+4. In **Get started with SAP Build Apps** press **Start**
+5. Check the Prerequisites to be met and press **Next**
+6. Under **Select Scenario** choose **Select Subaccount**
 
     <p align="center"><img src="./images/ex0-2-2.png" width="100%" /></p>
 
-
-    > Nós recomendamos escolher o plano de serviço **standard** para este exercício. Para testes, o plano **free** pode ser suficiente também.
-
-5. Para o SAP Build Apps e o para o SAP Build Work Zone Standard Edition selecione os planos **standard**, selecione sua subaccount and clique em **Next**
+7. We recommend choosing the **standard** service plan for this exercise. For testing only purposes the **free** plan may be sufficient as well
+8. Choose your subaccount and space to continue
 
     <p align="center"><img src="./images/ex0-2-3.png" width="100%" /></p>
 
+9. Select your **Identity Authentication** tenant for at least the dropdown **Custom Identity Provider for Applications** and optional as well for **Platform Users**
 
-6. Adicione os e-mails dos administradores e desenvolvedores desejados nos campos dedicados e clique em **Next**
-
+8. Add the emails of the desired administrators and developers in the dedicated fields
 
     <p align="center"><img src="./images/ex0-2-4.png" width="100%" /></p>
 
-7. Revise suas configurações e clique em **Finish**
+8. Review your settings and click finish
 
     <p align="center"><img src="./images/ex0-2-5.png" width="100%" /></p>
 
