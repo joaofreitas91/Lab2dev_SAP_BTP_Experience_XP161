@@ -8,7 +8,7 @@ Este repositório contém o material para o desenvolvimento de Aplicativos Móve
 
 ## Visão Geral
 
-O aplicativo SAP Mobile Start é seu ponto de entrada nativo para o universo móvel da SAP. Descubra como configurar e configurar o SAP Mobile Start e como adicionar seus aplicativos nativos. Você entenderá todos os pré-requisitos e etapas necessárias.
+O aplicativo SAP Mobile Start é seu ponto de entrada nativo para o universo móvel da SAP. Descubra como configurar o SAP Mobile Start e como adicionar seus aplicativos nativos. Você entenderá todos os pré-requisitos e etapas necessárias.
 
 ## Requisitos
 
