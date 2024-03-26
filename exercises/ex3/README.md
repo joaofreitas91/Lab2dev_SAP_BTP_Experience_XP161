@@ -1,4 +1,4 @@
-# Faça o Build do seu Aplicativo
+# Faça o Build da sua Aplicação
 
 ## Introdução
 

@@ -54,13 +54,14 @@ No SAP BTP Cockpit, selecione sua global account e siga os passos abaixo:
 
 10. Após a conclusão da configuração do booster será enviando um email de ativação para do Cloud Identity Services para o usuário configurado como administrador no passo 7. Ative a conta antes de acessar o SAP Build Apps.
 
-## Passo 2: Atribuir roles para o SAP Build Work Zone, edição padrão
+## Passo 2: Atribuir roles para o SAP Build Work Zone, standard edition
 
 1. Dentro da subconta, navegue até **Security** > **Role Collections**
 
+2. Na lista de role collection, procure **Launchpad Admin** e clique para abrir
+
     <p align="center"><img src="./images/ex0_part2_1.png" width="100%" /></p>
 
-2. Na lista de role collection, procure **Launchpad Admin** e clique para abrir
 
 3. Escolha o botão **Editar** e role a página para baixo até a seção **Usuário**. Insira o seu endereço de e-mail e selecione **Custom Identity Provider** como **Identity Provider**. Repita o passo para todos os usuários que precisam de acesso de administrador.
 
@@ -70,7 +71,7 @@ No SAP BTP Cockpit, selecione sua global account e siga os passos abaixo:
 
 ## Parabéns!
 
-Awesome! You completed Exercise 0 for the prerequisites. 🥳
+Incrível! Você completou o Exercício 0 para os pré-requisitos. 🥳
 
 Agora você é capaz de ver tanto o **SAP Build Apps** quanto o **SAP Build Work Zone, standard edition** em sua subconta BTP em **Instances and Subscriptions**. Usando o ícone de janela pequena você pode acessar a aplicação para trabalhar com eles.
 
@@ -81,12 +82,12 @@ Ou você pode seguir para o próximo exercício [Exercise 1](../ex1/), navegue p
 
 ## Problemas comuns
 
-### SAP Build Apps with a SAML Identity Provider
+### SAP Build Apps com SAML Identity Provider
 
 SAP Build Apps necessita de um tenant do SAP Identity Authentication Service conectado via OpenID Connect (OIDC) à subconta do SAP BTP usando a funcionalidade **Establish Trust**.
 
 ### IAS tenant não aparece em Establish Trust
 
-The SAP Identitiy Authentication Service Tenant só aparece em **Establish Trust** quando ambos estão atribuídos ao mesmo customer id.
+O SAP Identitiy Authentication Service Tenant só aparece em **Establish Trust** quando ambos estão atribuídos ao mesmo customer id.
 
 See [SAP Help](https://help.sap.com/docs/btp/sap-business-technology-platform/establishing-trust-automatically?version=Cloud&locale=en-US) para mais informações.
