@@ -63,47 +63,47 @@ Nesta seção, você irá criar uma nova aplicação usando o SAP Build Apps.
 
     <p align="center"><img src="./images/ex1_step2_11.png" width="100%" /></p>
 
-## Passo 3: Adicionando uma fonte de dados local
+## Passo 3: Habilitando autenticação
+
+Para consumir dados de um sistema SAP backend ou mock data que são configurados como uma destination SAP BTP, você precisa habilitar a autenticação.
+
+1. Clique na aba **AUTH** no topo do App Builder.
+
+2. Clique em habilitar autenticação.
+
+    <p align="center"><img src="./images/ex1_step3_a.png" width="100%" /></p>
+
+3. Selecione **SAP BTP Authentication** e clique em **OK**. Isso habilita a autenticação para o projeto.
+
+## Passo 4: Adicionando uma fonte de dados local
 
 Para adicionar uma fonte de dados local você precisa seguir os seguintes passos:
 
 1. Clique na aba **Data** no topo do App Builder.
 
-2. Procure a seção **On-device storage** e clique na opção  **CREATE DATA ENTITY**.
+2. Procure a seção **No system integrated** e clique na opção  **ADD INTEGRATION**.
 
     <p align="center"><img src="./images/ex1_step3_1.png" width="100%" /></p>
 
-3. Na próxima tela escreva o nome da entidade de dados como `Business_Partners` e clique em **ADD**.
+3. Na próxima tela, selecione **BTP Destinations**.
 
-    <p align="center"><img src="./images/ex1_step3_2.png" width="60%" /></p>
+4. Pesquise e selecione a destination `btp_experience_build_backend_dest`.
 
-4. Na próxima tela, clique no botão **ADD NEW** para adicionar um campos para a entidade de dados.
+5. Clique em instalar integração.
+
+6. Dentro da entidade de dados, selecione **Business_Partner**.
+
+    <p align="center"><img src="./images/ex1_step3_2.png" width="100%" /></p>
+
+7. Na próxima tela, clique no botão **Enable Data Entity**.
 
     <p align="center"><img src="./images/ex1_step3_3.png" width="100%" /></p>
 
-5. Na próxima tela, no campo **Field name** preencha com o valor `Partner_Name` e selecione o tipo de dados como **Text**.
-
-    <p align="center"><img src="./images/ex1_step3_4.png" width="60%" /></p>
-
-6. Repita os passos para os seguintes campos:
-
-    |Field name | Field type |
-    |----|----|
-    |Address | Text |
-    |Email | Text |
-    |Phone | Text |
-
-7. Agora vamos adicionar alguns dados fictícios para a entidade de dados. Clique no botão **BROWSE SAMPLE DATA**.
-
-    <p align="center"><img src="./images/ex1_step3_5.png" width="100%" /></p>
-
-8. Na próxima tela, clique no botão **NEW RECORD** para adicionar um novo registro. Fique a vontade para adicionar quantos registros desejar.
-
-    <p align="center"><img src="./images/ex1_step3_6.png" width="100%" /></p>
+8. Escolha **Save** no topo do app builder. Isso adiciona a fonte de dados ao seu projeto. Escolha **UI Canvas** para voltar para a visualização do designer de UI.
 
 9. Agora você adicionou uma fonte de dados para sua aplicação SAP Build Apps.
 
-## Passo 4: Criando uma página de lista de parceiros de negócios
+## Passo 5: Criando uma página de lista de parceiros de negócios
 
 Para criar uma página exibindo a lista de parceiros de negócios, você precisa primeiro criar **data variable**.
 
@@ -191,7 +191,7 @@ Agora vamos definir quais campos gostaríamos de exibir na interface do usuário
 
     <p align="center"><img src="./images/ex1_step4_nn7.png" width="50%" /></p>
 
-## Passo 5: Pré-visualização da aplicação
+## Passo 6: Pré-visualização da aplicação
 
 1. Clique na aba **LAUNCH**.
 
