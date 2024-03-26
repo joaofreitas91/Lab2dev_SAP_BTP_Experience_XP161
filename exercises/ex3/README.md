@@ -1,57 +1,59 @@
-# Build your App
+# Build sua aplicação
 
-## Introduction
+## Introdução
 
-In this section you will build the application that you created using SAP Build Apps, and then deploy it to SAP BTP as an HTML5 application.
+Nesta seção, você fara o build da aplicação que você criou usando o SAP Build Apps, e então implantá-la no SAP BTP como uma aplicação HTML5.
 
-## Prerequisites
+## Pré-requisitos
 
-- You have completed previous exercises
-- Your SAP Build App is working and ready to be deployed
+- Você deve ter completado os exercícios anteriores
+- Seu SAP Build App está funcionando e pronto para ser implantado
 
-## Step 1: Build your App
+## Passo 1: Build da aplicação
 
-1. In **Application Development** choose **LAUNCH**
+1. Clique na aba **LAUNCH**
 
-2. Choose **OPEN BUILD SERVICE**
+2. Selecione **OPEN BUILD SERVICE**
 
-    <p align="center"><img src="./images/1 ba_build_open_build_service.png" width="100%" /></p>
+    <p align="center"><img src="./images/1.png" width="100%" /></p>
 
-3. Under **Web App**, choose **CONFIGURE**
+3. Em **Web App**, clique em **CONFIGURE**
 
-    <p align="center"><img src="./images/2 ba_build_configure.png" width="60%" /></p>
+    <p align="center"><img src="./images/2.png" width="60%" /></p>
 
-4. On **Bundle Settings** tab, choose **MTAR** and then choose **NEXT**.
+4. Em **Bundle Settings**, escolha **MTAR** e então clique em **NEXT**.
 
-    <p align="center"><img src="./images/3 ba_build_mtar.png" width="60%" /></p>
+    <p align="center"><img src="./images/3.png" width="60%" /></p>
 
-5. On **Image Assets** tab, choose **NEXT**
+5. Em **Image Assets**, clique em **NEXT**
 
-6. On **Permissions**, choose **NEXT**
+6. Em **Plugins**, clique em **NEXT**
 
-    <p align="center"><img src="./images/41 ba_build_mtar.png" width="60%" /></p>
+7. Na seção **Web App**, clique em **BUILD**
 
-7. In the **Web App** section, choose **BUILD**
+    <p align="center"><img src="./images/4.png" width="60%" /></p>
 
-    <p align="center"><img src="./images/5 ba_build_building_web_app.png" width="60%" /></p>
+8. Selecione o File Type como **MTAR**
 
-8. Choose file type **MTAR**
+9. Selecione a última client runtime version.
 
-9. Choose the latest runtime version
+10. Escreva o número da versão, por exemplo, `0.0.1`
 
-10. Enter a version number, for example, `0.0.1`
+11. Clique no botão **BUILD**
 
-11. Choose **BUILD**
+    <p align="center"><img src="./images/5.png" width="60%" /></p>
 
-    <p align="center"><img src="./images/6. ba_build_status.png" width="60%" /></p>
+    O build pode levar mais de 10 minutos. Normalmente a página se atualiza automaticamente. Mas você também pode atualizá-la manualmente de tempos em tempos para verificar o status.
 
-    The build can take more than 10 minutes. Usually the pages refreshes itself automatically. But you can also manually refresh it from time to time to check the staus.
+12. Quando o build estiver completo, deverá aparecer no histórico de builds.
 
-## Congrats
+    <p align="center"><img src="./images/6.png" width="60%" /></p>
 
-Like a champion! You completed Exercise 3 successfully. 🥳
+## Parabéns!
 
-You have successfully built the application that you developed in SAP Build Apps.
+Você completou o build da aplicação que você desenvolveu no SAP Build Apps.
 
-You can now navigate to the [Overview](../../#exercises).  
-We will continue with a demo presentation during SAP TechEd 2023 before we continue with [Exercise 4](../ex4/), you navigate there using [this link](../ex4/).
+Incrível! Você completou o Exercício 3. 🥳
+
+Você pode voltar para a página Overview [Overview](../../#exercises).  
+Ou você pode seguir para o próximo exercício [Exercise 4](../ex4/), navegue para lá clicando no link [this link](../ex4/).
