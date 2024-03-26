@@ -15,7 +15,7 @@
 - Acesso de Admin Global Account (Para rodar o booster)
 - Acesso de Admin para Subaccount
 
-## Execute o booster para SAP Build Apps
+## Passo 1: Execute o booster para SAP Build Apps
 
 No SAP BTP Cockpit, selecione sua global account e siga os passos abaixo:
 
@@ -23,67 +23,70 @@ No SAP BTP Cockpit, selecione sua global account e siga os passos abaixo:
 2. Pesquise por `SAP Build Apps`
 3. Selecione o booster **Get Started with SAP Build Apps - Detailed Account Setup** e clique em **Start**
 
-    <p align="center"><img src="./images/ex0-2-1.png" width="100%" /></p>
+    <p align="center"><img src="./images/ex0_part1_1.png" width="100%" /></p>
 
-4. Em **Select Scenario** escolha a opção **Select Subaccount** e clique em **Next**
+4. Verifique os pré-requisitos e clique em **Next**
 
-    <p align="center"><img src="./images/ex0-2-2.png" width="100%" /></p>
+5. Em **Select Scenario** escolha a opção **Select Subaccount** e clique em **Next**
+
+    <p align="center"><img src="./images/ex0_part1_2.png" width="100%" /></p>
 
 
     > Nós recomendamos escolher o plano de serviço **standard** para este exercício. Para testes, o plano **free** pode ser suficiente também.
 
-5. Para o SAP Build Apps e o para o SAP Build Work Zone Standard Edition selecione os planos **standard**, selecione sua subaccount and clique em **Next**
+6. Para o SAP Build Apps escolha o plano **free** e o para o SAP Build Work Zone Standard Edition selecione o plano **standard**, selecione seu space and clique em **Next**
 
-    <p align="center"><img src="./images/ex0-2-3.png" width="100%" /></p>
-
-
-6. Adicione os e-mails dos administradores e desenvolvedores desejados nos campos dedicados e clique em **Next**
+    <p align="center"><img src="./images/ex0_part1_3.png" width="100%" /></p>
 
 
-    <p align="center"><img src="./images/ex0-2-4.png" width="100%" /></p>
+7. Adicione os e-mails dos administradores e dos desenvolvedores desejados nos campos dedicados e clique em **Next**
 
-7. Revise suas configurações e clique em **Finish**
 
-    <p align="center"><img src="./images/ex0-2-5.png" width="100%" /></p>
+    <p align="center"><img src="./images/ex0_part1_4.png" width="100%" /></p>
 
-## Step 3: Assign roles for SAP Build Work Zone, standard edition 
+8. Revise suas configurações e clique em **Finish**
 
-1. Navigate to your subaccount in **SAP BTP Cockpit**
-2. Navigate to **Role Collections** under **Security**
+    <p align="center"><img src="./images/ex0_part1_5.png" width="100%" /></p>
 
-    <p align="center"><img src="./images/ex0-3-1.png" width="100%" /></p>
+9. O booster irá criar os serviços necessários para o SAP Build Apps e SAP Build Work Zone, standard edition. Isso pode levar alguns minutos. Quando o booster estiver completo, você verá uma mensagem de sucesso. Clique na opção **Navigate to Subaccount** para ir para a subconta.
 
-3. In the role collection list, find **Launchpad Admin** and choose it to open
-4. Choose the **Edit** button and scroll down to **User** section. Enter your e-mail address in the section and select **Custom Identity Provider** as **Identity Provider**. Repeat the step for all the users who need admin access.
-5. **Save** your changes
+    <p align="center"><img src="./images/ex0_part1_6.png" width="100%" /></p>
 
-    <p align="center"><img src="./images/ex0-3-2.png" width="100%" /></p>
+10. Após a conclusão da configuração do booster será enviando um email de ativação para do Cloud Identity Services para o usuário configurado como administrador no passo 7. Ative a conta antes de acessar o SAP Build Apps.
 
-## (Optional) Step 4: Configure S/4HANA
+## Passo 2: Atribuir roles para o SAP Build Work Zone, edição padrão
 
-In order to see more business content in **SAP Mobile Start**, you can also configure your **SAP S/4HANA** system to expose business content to **SAP Build Work Zone, standard edition**. With that the content will also be visible in **SAP Mobile Start**.
+1. Dentro da subconta, navegue até **Security** > **Role Collections**
 
-Check out the Hands-on session [DT162](https://github.com/SAP-samples/teched2023-DT162) to learn more about this.
+    <p align="center"><img src="./images/ex0_part2_1.png" width="100%" /></p>
 
-## Congrats
+2. Na lista de role collection, procure **Launchpad Admin** e clique para abrir
+
+3. Escolha o botão **Editar** e role a página para baixo até a seção **Usuário**. Insira o seu endereço de e-mail e selecione **Custom Identity Provider** como **Identity Provider**. Repita o passo para todos os usuários que precisam de acesso de administrador.
+
+4. **Save** suas alterações
+
+    <p align="center"><img src="./images/ex0_part2_2.png" width="100%" /></p>
+
+## Parabéns!
 
 Awesome! You completed Exercise 0 for the prerequisites. 🥳
 
-Now you should be able to see both **SAP Build Apps** as well as **SAP Build Work Zone, standard edition** in your BTP subaccount under **Instances and Subscriptions**. Using the small window icon you can access the application in order to work with these.
+Agora você é capaz de ver tanto o **SAP Build Apps** quanto o **SAP Build Work Zone, standard edition** em sua subconta BTP em **Instances and Subscriptions**. Usando o ícone de janela pequena você pode acessar a aplicação para trabalhar com eles.
 
-<p align="center"><img src="./images/ex0-4-1.png" width="100%" /></p>
+<p align="center"><img src="./images/ex0_part3_1.png" width="100%" /></p>
 
-You can now navigate to the [Overview](../../#exercises).  
-If your instructor already told you to continue with [Exercise 1](../ex1/), you navigate there using [this link](../ex1/).
+Você pode voltar para a página [Overview](../../#exercises).  
+Ou você pode seguir para o próximo exercício [Exercise 1](../ex1/), navegue para lá clicando no link [neste link](../ex1/).
 
-## Troubleshooting
+## Problemas comuns
 
 ### SAP Build Apps with a SAML Identity Provider
 
-SAP Build Apps requires an SAP Identity Authentication Service tenant connected via OpenID Connect (OIDC) to the SAP BTP subaccount using the **Establish Trust** functionality.
+SAP Build Apps necessita de um tenant do SAP Identity Authentication Service conectado via OpenID Connect (OIDC) à subconta do SAP BTP usando a funcionalidade **Establish Trust**.
 
-### IAS tenant not appearing under Establish Trust
+### IAS tenant não aparece em Establish Trust
 
-The SAP Identitiy Authentication Service Tenant only appears under **Establish Trust** when both is assigned to the same customer id.
+The SAP Identitiy Authentication Service Tenant só aparece em **Establish Trust** quando ambos estão atribuídos ao mesmo customer id.
 
-See [SAP Help](https://help.sap.com/docs/btp/sap-business-technology-platform/establishing-trust-automatically?version=Cloud&locale=en-US) for more information
+See [SAP Help](https://help.sap.com/docs/btp/sap-business-technology-platform/establishing-trust-automatically?version=Cloud&locale=en-US) para mais informações.
