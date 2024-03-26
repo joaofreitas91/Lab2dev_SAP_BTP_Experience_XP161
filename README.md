@@ -8,7 +8,7 @@ Este repositório contém o material para o desenvolvimento de Aplicativos Móve
 
 ## Visão Geral
 
-O aplicativo SAP Mobile Start é seu ponto de entrada nativo para o universo móvel da SAP. Descubra como configurar e configurar o SAP Mobile Start com o SAP S/4HANA e como adicionar seus aplicativos nativos. Você entenderá todos os pré-requisitos e etapas necessárias.
+O aplicativo SAP Mobile Start é seu ponto de entrada nativo para o universo móvel da SAP. Descubra como configurar e configurar o SAP Mobile Start e como adicionar seus aplicativos nativos. Você entenderá todos os pré-requisitos e etapas necessárias.
 
 ## Requisitos
 
@@ -23,16 +23,11 @@ Os requisitos para seguir os exercícios neste repositório são:
   - Destination Service
   - Identity Authentication Service Tenant
 - Acesso de administrador para esta Sub account
-- (Opcional) Um sistema S/4HANA
-  - Content Exposure do SAP S/4HANA para SAP Build Work Zone, standard edition
-  - [S/4HANA Cloud Edition](https://help.sap.com/docs/CIAS%20LPD%20for%20S_4%20Cloud/b4ae4453db454f1d8775a4f69826453f/069f16288f394305a7be38a480384807.html?locale=en-US)
-  - [S/4HANA On Premise](https://help.sap.com/docs/CIAS%20FES%202020/ecb81b5bfce440ca8e7e7c9ad58fcf3a/98a3f0830f084aefb5ea75fb20959af5.html?locale=en-US)
-  - Funções atribuídas ao usuário no SAP S/4HANA correspondentes ao conteúdo exposto
 - Um telefone celular (iOS ou Android) capaz de executar o SAP Mobile Start
 
 ## Exercícios
 
-> **NOTA:** Para a Sessão Prática, já preparamos o landscape com **SAP Build Work Zone, edição padrão** e **SAP Build Apps**. Por favor, comece diretamente com o Exercício 1 como participante presencial.
+> **NOTA:** Para a Sessão Prática, já preparamos o landscape com **SAP Build Work Zone, standard edition** e **SAP Build Apps**. Por favor, comece diretamente com o Exercício 1 como participante presencial.
 
 - [Exercício 0 - Pré-requisitos e Configuração do landscape](exercises/ex0/)
 - [Exercício 1 - Crie seu primeiro aplicativo com SAP Build Apps](exercises/ex1/)
@@ -48,10 +43,7 @@ Os requisitos para seguir os exercícios neste repositório são:
 ## Recursos Adicionais
 
 - [SAP Mobile Start (Comunidade SAP)](https://community.sap.com/topics/mobile-experience/start)
-- SAP S/4HANA - Guia de Exposição de Conteúdo e Integração
-  - [Edição na Nuvem do S/4HANA](https://help.sap.com/docs/CIAS%20LPD%20for%20S_4%20Cloud/b4ae4453db454f1d8775a4f69826453f/069f16288f394305a7be38a480384807.html?locale=en-US)
-  - [On Premise do S/4HANA](https://help.sap.com/docs/CIAS%20FES%202020/ecb81b5bfce440ca8e7e7c9ad58fcf3a/98a3f0830f084aefb5ea75fb20959af5.html?locale=en-US)
-- [Provisionamento de Identidade (Documentação)](https://help.sap.com/docs/Launchpad_Service/8c8e1958338140699bd4811b37b82ece/1c231333f1d24ae0a8e60ce688c4f692.html)
+- [Identity Provisioning Service (Documentação)](https://help.sap.com/docs/Launchpad_Service/8c8e1958338140699bd4811b37b82ece/1c231333f1d24ae0a8e60ce688c4f692.html)
 - [SAP Build - low-code & no-code (Comunidade SAP)](https://community.sap.com/topics/low-code-no-code)
 - [SAP Build Work Zone, standard edition (Comunidade SAP)](https://community.sap.com/topics/work-zone/standard)
 
