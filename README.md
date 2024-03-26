@@ -15,14 +15,14 @@ O aplicativo SAP Mobile Start é seu ponto de entrada nativo para o universo mó
 Os requisitos para seguir os exercícios neste repositório são:
 
 - Global Account SAP BTP
-- Sub account SAP BTP
+- Subaccount SAP BTP
   - Ambiente Cloud Foundry habilitado
   - Entitlement *SAP Build Work Zone, standard edition*
   - Entitlement *SAP Build Apps*
   - Cloud Foundry Runtime
   - Destination Service
   - Identity Authentication Service Tenant
-- Acesso de administrador para esta Sub account
+- Acesso de administrador para esta Subaccount
 - Um telefone celular (iOS ou Android) capaz de executar o SAP Mobile Start
 
 ## Exercícios
