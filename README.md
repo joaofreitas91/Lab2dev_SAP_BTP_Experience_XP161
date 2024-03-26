@@ -31,8 +31,8 @@ Os requisitos para seguir os exercícios neste repositório são:
 
 - [Exercício 0 - Pré-requisitos e Configuração do landscape](exercises/ex0/)
 - [Exercício 1 - Crie seu primeiro aplicativo com SAP Build Apps](exercises/ex1/)
-- [Exercício 2 - Adicione mais detalhes e capacidades nativas ao seu aplicativo](exercises/ex2/)
-- [Exercício 3 - Construa seu Aplicativo](exercises/ex3/)
+- [Exercício 2 - Adicione mais funcionalidades à sua aplicação](exercises/ex2/)
+- [Exercício 3 - Faça o Build do seu Aplicativo](exercises/ex3/)
 - [Exercício 4 - Integre seu aplicativo com SAP Build Work Zone, edição padrão e adicione-o ao SAP Mobile Start](exercises/ex4/)
 
 ## Acesso ao Sistema

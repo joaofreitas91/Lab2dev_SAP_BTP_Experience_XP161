@@ -1,4 +1,4 @@
-# Adicione mais detalhes e capacidades nativas à sua aplicação
+# Adicione mais funcionalidades à sua aplicação
 
 ## Introdução
 
