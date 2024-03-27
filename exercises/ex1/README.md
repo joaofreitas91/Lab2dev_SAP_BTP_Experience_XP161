@@ -203,10 +203,6 @@ Agora vamos definir quais campos gostaríamos de exibir na interface do usuário
 
 4. Selecione o aplicativo que você acabou de criar.
 
-5. Deixe a opção **Sample Data** marcada como **ON** e clique em **Open preview**.
-
-    <p align="center"><img src="./images/ex1_step5_1.png" width="50%" /></p>
-
 5. O aplicativo será exibido no portal de pré-visualização.
 
     <p align="center"><img src="./images/ex1_step5_2.png" width="100%" /></p>
