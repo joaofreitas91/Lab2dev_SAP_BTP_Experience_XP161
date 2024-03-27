@@ -213,10 +213,6 @@ Você irá alterar o cabeçalho da página de detalhes, para que ele exiba o par
 
     <p align="center"><img src="./images/ex2_part6_1.png" width="70%" /></p>
 
-4. No campo Sample Data deixa a opção **Use sample data** selecionada e depois clique no botão **Open preview**.
-
-    <p align="center"><img src="./images/ex2_part6_2.png" width="70%" /></p>
-
 A home page deve ser parecida com a imagem abaixo:
 
 <p align="center"><img src="./images/ex2_part6_3.png" width="100%" /></p>
