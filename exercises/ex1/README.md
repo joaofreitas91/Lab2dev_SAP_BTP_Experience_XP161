@@ -111,7 +111,7 @@ Para criar uma página exibindo a lista de parceiros de negócios, você precisa
 
 Um data variable é essencialmente a mesma coisa que uma page variable que existe no contexto da página atual e não é acessível de outras páginas, e desaparece se a página for removida de navegação. A diferença é que ela obtém seu esquema do recurso de dados ao qual aponta e vem com a lógica padrão incluída.
 
-**Criando um Data Variable**
+### **Criando um Data Variable**
 
 Vamos criar um data variable para armazenar os resultados dos dados do parceiro de negócios provenientes da fonte de dados.
 
@@ -131,7 +131,7 @@ Vamos criar um data variable para armazenar os resultados dos dados do parceiro 
 
 Agora que a data variable foi criada, alterne de volta para o modo **VIEW**.
 
-**Criando uma página de lista de parceiros de negócios**
+### **Criando uma página de lista de parceiros de negócios**
 
 Neste passo você irá criar uma página de lista de parceiros de negócios no app builder.
 
@@ -153,9 +153,9 @@ Neste passo você irá criar uma página de lista de parceiros de negócios no a
 
 5. Selecione **Business_Partners** na lista e clique em **SAVE**.
 
-Você configurou que a lista é populada com a variável de dados que obtém os dados do parceiro de negócios.
+6. Você configurou que a lista é populada com a variável de dados que obtém os dados do parceiro de negócios.
 
-**Selecionando os campos de exibição para a lista**
+### **Selecionando os campos de exibição para a lista**
 
 Agora vamos definir quais campos gostaríamos de exibir na interface do usuário na lista de parceiros de negócios.
 
